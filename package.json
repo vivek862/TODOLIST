@@ -1,0 +1,59 @@
+{
+  "name": "peoplesearchreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "webpack",
+    "serve:dev": "webpack-dev-server"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Vivek",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@types/enzyme": "^3.10.5",
+    "@types/html-webpack-plugin": "^3.2.3",
+    "@types/jest": "^26.0.0",
+    "@types/lodash": "^4.14.155",
+    "@types/react": "^16.9.37",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router": "^5.1.7",
+    "@types/webpack": "^4.41.17",
+    "css-loader": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.0.1",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "connected-react-router": "^6.8.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "reactjs-popup": "^1.5.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "scss-loader": "^0.0.1",
+    "styled-components": "^5.1.1"
+  }
+}
