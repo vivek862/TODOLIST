@@ -11,14 +11,13 @@ interface Props {
   toDoList: any,
   toDoActions: any
 }
-class App extends React.Component<Props, any> {
+export class App extends React.Component<Props, any> {
   constructor(props) {
     super(props)
     this.state = {
       dropContainers: [],
       text: '+ Add Column'
     }
-    console.log(JSON.stringify(props));
   }
 
   addContainer = (title, content) => {
@@ -27,7 +26,7 @@ class App extends React.Component<Props, any> {
       id: `column${currentColumnLength + 1}`,
       title: title,
       content: content,
-      taskIds:[]
+      taskIds: []
     }
     this.props.toDoActions.addColumnData(newColumn);
   }
@@ -68,25 +67,25 @@ class App extends React.Component<Props, any> {
         taskIds: finalTaskIds
       }
       this.props.toDoActions.updateColumnData(finalColmn);
-      
+
     }
 
-    
+
 
   }
   render() {
     const droppableContainers = this.props.toDoList.columnIds.map(id => {
       const column = this.props.toDoList.columns[id];
       const columntasks = column.taskIds.map((taskId) => this.props.toDoList.tasks[taskId]);
-      return <Column key={id} column={column} tasks={columntasks} addTask={this.props.toDoActions.addTask}/>
+      return <Column key={id} column={column} tasks={columntasks} addTask={this.props.toDoActions.addTask} />
     });
     return <div className="topLevelEmenet">
       <div className="title">To Do App</div>
       <div className="columns">
-      <DragDropContext onDragEnd={this.dragEnd}>
-        {droppableContainers}
-        <AddDetail text={this.state.text} updateData={this.addContainer.bind(this)}></AddDetail>
-      </DragDropContext>
+        <DragDropContext onDragEnd={this.dragEnd}>
+          {droppableContainers}
+          <AddDetail text={this.state.text} updateData={this.addContainer.bind(this)}></AddDetail>
+        </DragDropContext>
       </div>
     </div>
   }

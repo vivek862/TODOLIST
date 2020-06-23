@@ -1,4 +1,4 @@
-const initialState = {
+export const initialState = {
     tasks: {
       'task1': {id: 'task1', title: 'Task 1', content: 'This is a very good description'},
       'task2': {id: 'task2', title: 'Task 2', content: 'Mail to xxxxx on tuesday at 3.30'},

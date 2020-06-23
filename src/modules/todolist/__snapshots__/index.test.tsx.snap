@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App Component App Component Should Render 1`] = `
+<div
+  className="topLevelEmenet"
+>
+  <div
+    className="title"
+  >
+    To Do App
+  </div>
+  <div
+    className="columns"
+  >
+    <DragDropContext
+      onDragEnd={[Function]}
+    >
+      <Column
+        column={
+          Object {
+            "id": "column1",
+            "taskIds": Array [
+              "task1",
+              "task2",
+              "task3",
+              "task4",
+            ],
+            "title": "To Do",
+          }
+        }
+        key="column1"
+        tasks={
+          Array [
+            Object {
+              "content": "This is a very good description",
+              "id": "task1",
+              "title": "Task 1",
+            },
+            Object {
+              "content": "Mail to xxxxx on tuesday at 3.30",
+              "id": "task2",
+              "title": "Task 2",
+            },
+            Object {
+              "content": "Call amber on friday",
+              "id": "task3",
+              "title": "Task 3",
+            },
+            Object {
+              "content": "call madison on thursady",
+              "id": "task4",
+              "title": "Task 4",
+            },
+          ]
+        }
+      />
+      <AddDetail
+        text="+ Add Column"
+        updateData={[Function]}
+      />
+    </DragDropContext>
+  </div>
+</div>
+`;
