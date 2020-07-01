@@ -7,7 +7,7 @@ import App from 'modules/todolist/index'
 const store = configureStore({});
 render(
     <Provider store={store}>
-        <App/>
+            <App/>
     </Provider>,
     document.getElementById('root')
 )
